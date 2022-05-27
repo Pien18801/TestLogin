@@ -1,0 +1,49 @@
+#tableformcontent, td {
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 90%;
+	align-items: center;
+	border-radius: 4px;
+}
+
+#tableformcontent {
+	border-radius: 4px;
+}
+
+#title, textarea {
+	width: 500px;
+	border-radius: 4px;
+	margin-top: 5px;
+}
+
+.submit {
+	width: 100px;
+	background-color: white;
+	height: 30px;
+	border-radius: 4px;
+}
+
+.content {
+	background-color: #F5F5F5;
+	border-radius: 4px;
+}
+
+label.error {
+	display: block;
+	color: red;
+}
+
+table {
+	border-collapse: collapse;
+	border-radius: 30px;
+	border-style: hidden; /* hide standard table (collapsed) border */
+	box-shadow: 0 0 0 1px #666; /* this draws the table border  */
+}
+
+td {
+	border: 1px solid #ccc;
+}
+.contentinput{
+	font-weight: bold;
+}

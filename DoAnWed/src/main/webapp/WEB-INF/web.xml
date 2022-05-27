@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	
+	<display-name>Web Application</display-name>
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<listener>
+		<listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener
+		</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>Tiles Dispatch</servlet-name>
+		<servlet-class>org.apache.tiles.web.util.TilesDispatchServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>RegisterController</display-name>
+		<servlet-name>RegisterController</servlet-name>
+		<description>/register</description>
+		<servlet-class>controller.RegisterController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ViewController</display-name>
+		<servlet-name>ViewController</servlet-name>
+		<servlet-class>controller.ViewController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>EditProfileController</display-name>
+		<servlet-name>EditProfileController</servlet-name>
+		<servlet-class>controller.EditProfileController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SearchController</display-name>
+		<servlet-name>SearchController</servlet-name>
+		<servlet-class>controller.SearchController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>EditContentController</display-name>
+		<servlet-name>EditContentController</servlet-name>
+		<servlet-class>controller.EditContentController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>DeleteContentController</display-name>
+		<servlet-name>DeleteContentController</servlet-name>
+		<servlet-class>controller.DeleteContentController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>EditController</display-name>
+		<servlet-name>EditController</servlet-name>
+		<servlet-class>controller.EditController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LoginController</display-name>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>controller.LoginController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>GetInforController</display-name>
+		<servlet-name>GetInforController</servlet-name>
+		<servlet-class>controller.GetInforController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AddContentController</display-name>
+		<servlet-name>AddContentController</servlet-name>
+		<servlet-class>controller.AddContentController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Tiles Dispatch</servlet-name>
+		<url-pattern>*.tiles</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/RegisterController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewController</servlet-name>
+		<url-pattern>/ViewController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditProfileController</servlet-name>
+		<url-pattern>/EditProfileController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchController</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditContentController</servlet-name>
+		<url-pattern>/EditContentController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteContentController</servlet-name>
+		<url-pattern>/DeleteContentController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditController</servlet-name>
+		<url-pattern>/EditController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetInforController</servlet-name>
+		<url-pattern>/GetInforController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddContentController</servlet-name>
+		<url-pattern>/AddContentController</url-pattern>
+	</servlet-mapping>
+</web-app>
